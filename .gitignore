@@ -4,5 +4,5 @@ __pycache__
 venv
 db.sqlite3
 /static
-/media
+/media/intruder_image
 .DS_Store
