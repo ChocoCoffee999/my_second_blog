@@ -4,6 +4,8 @@ from .models import Post
 from .forms import PostForm
 from rest_framework import viewsets
 from .serializers import PostSerializer
+from rest_framework.parsers import MultiPartParser, FormParser
+
 
 # Create your views here.
 def post_list(request):
@@ -46,3 +48,4 @@ def post_edit(request, pk):
 class IntruderImage(viewsets.ModelViewSet):
     queryset = Post.objects.all()
     serializer_class = PostSerializer
+    parser_classes = (MultiPartParser, FormParser)

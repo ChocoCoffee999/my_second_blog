@@ -6,3 +6,4 @@ db.sqlite3
 /static
 /media/intruder_image
 .DS_Store
+/blog/templates/blog/target_test.html
